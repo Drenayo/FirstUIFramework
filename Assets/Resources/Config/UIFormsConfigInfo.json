@@ -1,0 +1,40 @@
+﻿{
+    "ConfigInfo": [
+        { "Key": "UI窗体路径存放Json" },
+
+        {
+            "Key": "LogonPanel",
+            "Value": "UIPrefabs\\LogonPanel"
+        },
+
+        {
+            "Key": "MainPanel",
+            "Value": "UIPrefabs\\MainPanel"
+        },
+
+        {
+            "Key": "ShopPanel",
+            "Value": "UIPrefabs\\ShopPanel"
+        },
+
+        {
+            "Key": "SettingPanel",
+            "Value": "UIPrefabs\\SettingPanel"
+        },
+
+        {
+            "Key": "SettingAudioPanel",
+            "Value": "UIPrefabs\\SettingAudioPanel"
+        },
+
+        {
+            "Key": "SettingVideoPanel",
+            "Value": "UIPrefabs\\SettingVideoPanel"
+        },
+
+        {
+            "Key": "ItemDetailsPanel",
+            "Value": "UIPrefabs\\ItemDetailsPanel"
+        }
+    ]
+}
