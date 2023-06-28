@@ -7,7 +7,6 @@ namespace Demo
 {
     public class StartDemo : MonoBehaviour
     {
-        // 添加一句注释，三次测试
         void Start()
         {
             UIManager.GetInstance().ShowUIForms(ProConst.UI_LOGON);

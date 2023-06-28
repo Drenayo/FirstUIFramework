@@ -44,7 +44,8 @@ namespace SUIFW
         private Transform _TraPopUp = null;
         // UI管理脚本的节点
         private Transform _TraUIScripts = null;
-
+        // 语言类型
+        private LanguageType languageType = LanguageType.CN;
         #endregion
 
         #region 生命周期函数 Awake初始化

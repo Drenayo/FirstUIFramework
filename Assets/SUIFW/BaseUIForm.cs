@@ -33,7 +33,7 @@ namespace SUIFW
                 UIMaskMgr.GetInstance().SetMaskWindow(gameObject, _CurrentUIType.UIForm_LucencyType);
             }
 
-            Debug.Log(this.gameObject.name + "显示");
+            //Debug.Log(this.gameObject.name + "显示");
         }
 
         /// <summary>
@@ -49,7 +49,7 @@ namespace SUIFW
                 UIMaskMgr.GetInstance().CancelMaskWindow();
             }
 
-            Debug.Log(this.gameObject.name + "隐藏");
+            //Debug.Log(this.gameObject.name + "隐藏");
         }
 
         /// <summary>
@@ -66,7 +66,7 @@ namespace SUIFW
             }
 
 
-            Debug.Log(this.gameObject.name + "再次显示");
+            //Debug.Log(this.gameObject.name + "再次显示");
         }
 
         /// <summary>
@@ -77,11 +77,17 @@ namespace SUIFW
             // 冻结状态暂时不需要太多操作，因为下层窗体无法点击是由Mask实现的，而不是该函数实现的
             // 后续这里会对状态进行操作，窗体状态可以用来判定UI的动效，粒子，是否播放
             this.gameObject.SetActive(true);
-            Debug.Log(this.gameObject.name + "冻结");
+
+            //Debug.Log(this.gameObject.name + "冻结");
         }
         #endregion
 
         #region 封装UI框架的方法，供子类使用
+
+        protected void ShowText()
+        {
+            LauguageMgr.GetInstance().ShowText("");
+        }
 
         /// <summary>
         /// 通过编辑器设置窗体类型

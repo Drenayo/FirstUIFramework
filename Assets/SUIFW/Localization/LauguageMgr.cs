@@ -40,7 +40,9 @@ namespace SUIFW
         /// </summary>
         private void InitLauguageCcche()
         {
-            IConfigManager config = new ConfigManagerByJson("Config\\LauguageJSONConfig_CN");
+            //IConfigManager config = new ConfigManagerByJson("Config\\LauguageJSONConfig_CN");
+            IConfigManager config = SetLanguage(LanguageType.CN);
+
             if (config != null)
             {
                 _DicLauguageCache = config.Appsetting;
@@ -63,6 +65,25 @@ namespace SUIFW
                 {
                     return str;
                 }
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// …Ë÷√”Ô—‘¿‡–Õ
+        /// </summary>
+        /// <param name="languageType">”Ô—‘</param>
+        private IConfigManager SetLanguage(LanguageType languageType)
+        {
+            if (languageType == LanguageType.CN)
+            {
+                IConfigManager config = new ConfigManagerByJson("Config\\LauguageJSONConfig_CN");
+                return config;
+            }
+            else if(languageType == LanguageType.EN)
+            {
+                IConfigManager config = new ConfigManagerByJson("Config\\LauguageJSONConfig_EN");
+                return config;
             }
             return null;
         }

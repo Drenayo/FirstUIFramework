@@ -13,7 +13,14 @@ namespace SUIFW
 
     }
 
+    
     #region 枚举
+    public enum LanguageType
+    {
+        CN,EN
+    }
+
+
     /// <summary>
     /// UI窗体类型(位置)
     /// Normal 普通窗体 全屏的
